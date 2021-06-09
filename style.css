@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+/* styling af logo  */
+.logo {
+  font-family: "Limelight", cursive;
+  color: #ffffff;
+}
+
 li {
   list-style: none;
 }
@@ -12,15 +18,9 @@ a {
   text-decoration: none;
 }
 
-body {
-  /* Bare så vi kan scrolle - det her gør man self ikke irl */
-  height: 200vh;
-}
-
-/* header (Den sorte) */
-
+/* styling af header */
 header {
-  background-color: black;
+  background-color: #595959;
   position: sticky;
   top: 0;
   left: 0;
@@ -33,17 +33,15 @@ header nav {
   padding: 10px;
 }
 
-/* #menu (Den Gule) */
-
+/* styling af menu */
 #menu {
   /* position: absolut gør elementets placerering relativt til den nærmeste parent som ikke har position: static (static er default på alle elementer). Her er den relativ ifht "header", da den er position: sticky.  */
   position: absolute;
-
   top: 0;
   left: 0;
   width: 50%;
   height: 100vh;
-  background-color: yellow;
+  background-color: #8c8c8c;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -59,19 +57,24 @@ header nav {
 }
 
 #menu a {
-  font-family: sans-serif;
-  color: green;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
   font-weight: 700;
   font-size: 1.7rem;
   display: block;
 }
 
+#menu a:hover {
+  color: #ffffff;
+}
+
+/* styling af burger_btn */
 #burger_btn {
   width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
-  background-color: blue;
+  background-color: #595959;
   position: relative;
 }
 
@@ -79,7 +82,7 @@ header nav {
   width: 100%;
   height: 3px;
   position: absolute;
-  background-color: greenyellow;
+  background-color: #ffffff;
 }
 
 .stroke.top {
@@ -89,3 +92,12 @@ header nav {
 .stroke.bottom {
   transform: translateY(10px);
 }
+
+/* styling af first_section */
+#first_section {
+  background-color: #595959;
+  width: 100%;
+  height: 100vh;
+}
+
+/* styling af h1 */

@@ -12,14 +12,19 @@
 }
 /* styling af knap */
 .knap {
-  background-color: #a5678e;
+  background: #ffffff;
+  box-shadow: 0 3px 6px #d9d9d9;
   border: none;
-  color: white;
+  color: black;
   font-family: "Montserrat", sans-serif;
-  padding: 15px 32px;
+  padding: 15px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+}
+
+.web_knap a:hover {
+  background-color: #ebeaea;
 }
 
 /* MENU GENERELT */

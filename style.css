@@ -137,32 +137,60 @@ h1 {
 
 /* styling af elementer i second_section */
 .element_1 {
-  width: 300px;
-  height: 100px;
+  width: 70%;
+  height: 7em;
   background: #8c8c8c;
+  box-shadow: 0 3px 6px #d9d9d9;
+  margin: 10px 0px;
+  padding-left: 20px;
 }
 
 .element_2 {
-  width: 300px;
-  height: 100px;
+  width: 70%;
+  height: 7em;
   background: #595959;
+  box-shadow: 0 3px 6px #d9d9d9;
+  margin: 10px 0px;
+  padding-left: 20px;
 }
 
 .element_3 {
-  width: 300px;
-  height: 100px;
+  width: 70%;
+  height: 7em;
   background: #262626;
+  box-shadow: 0 3px 6px #d9d9d9;
+  margin: 10px 0px;
+  padding-left: 20px;
 }
 
 .element_4 {
-  width: 300px;
-  height: 100px;
+  width: 70%;
+  height: 7em;
   background: #000000;
+  box-shadow: 0 3px 6px #d9d9d9;
+  margin: 10px 0px;
+  padding-left: 20px;
+}
+
+#second_section h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
 }
 
 /* styling af p i second_section */
-#second_section p {
+#second_section a {
   font-family: "Montserrat", sans-serif;
   color: white;
-  text-align: center;
+}
+
+#second_section a:hover {
+  opacity: 75%;
+}
+
+/* placering af elementer i second_section */
+.section_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

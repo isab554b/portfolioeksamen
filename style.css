@@ -105,6 +105,13 @@ a {
   grid-template-rows: repeat(12, 1fr);
 }
 
+/* styling af h1 */
+h1 {
+  font-family: "Limelight", cursive;
+  color: #ffffff;
+  font-size: clamp(3rem, 5.5vw + 1.9rem, 6rem);
+}
+
 /* placering af h1  */
 .text1 {
   grid-column: 2/8;
@@ -121,9 +128,41 @@ a {
   grid-row: 6/7;
 }
 
-/* styling af h1 */
-h1 {
-  font-family: "Limelight", cursive;
-  color: #ffffff;
-  font-size: clamp(3rem, 5.5vw + 1.9rem, 6rem);
+/* styling og placering af boks */
+.boks {
+  border: 2px solid white;
+  grid-column: 2/7;
+  grid-row: 4/8;
+}
+
+/* styling af elementer i second_section */
+.element_1 {
+  width: 300px;
+  height: 100px;
+  background: #8c8c8c;
+}
+
+.element_2 {
+  width: 300px;
+  height: 100px;
+  background: #595959;
+}
+
+.element_3 {
+  width: 300px;
+  height: 100px;
+  background: #262626;
+}
+
+.element_4 {
+  width: 300px;
+  height: 100px;
+  background: #000000;
+}
+
+/* styling af p i second_section */
+#second_section p {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-align: center;
 }

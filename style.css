@@ -3,6 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  hyphens: auto;
+}
+
+/* generelt for p */
+p {
+  max-width: 60ch;
 }
 
 /* generelt for img */
@@ -26,7 +32,7 @@ img {
   border: none;
   color: black;
   font-family: "Montserrat", sans-serif;
-  padding: 15px 30px;
+  padding: 15px 40px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -242,9 +248,28 @@ h1 {
 }
 
 /* SECOND SECTION GENERELT */
-/* styling af h2, h3 , p */
-#web_section2 h3,
-p {
+.web_wrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.col_1 {
+  grid-column: 2/10;
+}
+
+.web_knap {
+  grid-column: 4/8;
+}
+/* styling af h3 og p */
+#web_section2 h3 {
   font-family: "Montserrat", sans-serif;
   color: #000000;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+#web_section2 p {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  line-height: 150%;
 }

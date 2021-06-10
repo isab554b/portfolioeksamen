@@ -3,16 +3,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  hyphens: auto;
 }
 
 /* generelt for p */
 p {
   max-width: 60ch;
+  hyphens: auto;
 }
 
-/* generelt for img */
-img {
+/* generelt for img og video */
+img,
+video {
   display: block;
   width: 100%;
   height: auto;

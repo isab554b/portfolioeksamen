@@ -20,6 +20,16 @@ video {
   margin-bottom: 10px;
 }
 
+/* footer */
+footer {
+  height: 3em;
+  text-align: center;
+  padding: 1em;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  background-color: #f4f4f4;
+}
+
 /* styling af logo  */
 .logo {
   font-family: "Limelight", cursive;
@@ -193,11 +203,6 @@ h1 {
   padding-left: 20px;
 }
 
-/* baggrund tilføjet til second_section */
-#forside_section2 {
-  background-color: #f4f4f4;
-}
-
 /* styling af h2 i second_section */
 #forside_section2 h2 {
   font-family: "Montserrat", sans-serif;
@@ -226,6 +231,21 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+/* bagrundsfarve på alle undersider */
+#forside_section2,
+#web_section1,
+#ux_section1,
+#animation_section1,
+#indhold_section1,
+#om_section1,
+#web_section2,
+#ux_section2,
+#animation_section2,
+#indhold_section2,
+#indhold_section3,
+#om_section2 {
+  background-color: #f4f4f4;
 }
 
 /* FIRST SECTON GENERELT PÅ ALLE UNDERSIDER */
@@ -257,7 +277,6 @@ h1 {
 }
 
 /* SECOND/THIRD SECTION GENERELT PÅ ALLE UNDERSIDER */
-
 /* styling af h3 og p */
 #web_section2 h3,
 #ux_section2 h3,
@@ -276,7 +295,7 @@ h1 {
 #animation_section2 p,
 #indhold_section2 p,
 #indhold_section3 p,
-#om_section2 p {
+#om_section2 {
   font-family: "Montserrat", sans-serif;
   color: #000000;
   line-height: 150%;

@@ -22,9 +22,9 @@ video {
 
 /* footer */
 footer {
-  height: 3em;
+  height: 8em;
   text-align: center;
-  padding: 1em;
+  padding: 4em;
   font-family: "Montserrat", sans-serif;
   color: #000000;
   background-color: #f4f4f4;
@@ -56,7 +56,8 @@ footer p {
   margin-bottom: 1em;
 }
 
-.web_knap a:hover {
+.web_knap a:hover,
+.web_knap1 a:hover {
   background-color: #ebeaea;
 }
 
@@ -312,17 +313,47 @@ h1 {
   grid-template-columns: repeat(10, 1fr);
 }
 
-.col_1 {
+.col_1,
+.col_3 {
   grid-column: 2/10;
 }
 
-.web_knap {
+.col_img,
+.col3_img {
+  grid-column: 2/10;
+}
+
+.web_knap,
+.web_knap1 {
   grid-column: 3/10;
 }
 
 /* MEDIAQUERIES */
-/* MENU DESKTOP */
+/* ÆNDRET GRID */
 @media (min-width: 850px) {
+  /* elementer placeres via grid */
+  .col_1,
+  .col_3 {
+    grid-column: 2/9;
+  }
+
+  .col_img,
+  .col3_img {
+    grid-column: 2/9;
+  }
+  .web_knap,
+  .web_knap1 {
+    grid-column: 3/8;
+  }
+
+  /* styling af knap */
+  .knap {
+    width: 50vw;
+  }
+}
+
+/* MENU DESKTOP */
+@media (min-width: 900px) {
   #menu {
     position: static;
     width: 100%;
@@ -350,5 +381,32 @@ h1 {
   /* styling af burger_btn */
   #burger_btn {
     display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* elementer placeres via grid */
+  .col_1,
+  .col3_img {
+    grid-column: 2/6;
+    grid-row: 1/2;
+  }
+
+  .col_img,
+  .col_3 {
+    grid-column: 6/10;
+  }
+
+  .web_knap {
+    grid-column: 3/5;
+  }
+
+  .web_knap1 {
+    grid-column: 7/9;
+  }
+
+  /* styling af knap */
+  .knap {
+    width: 20vw;
   }
 }

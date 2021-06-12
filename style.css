@@ -49,7 +49,7 @@ footer p {
   color: black;
   font-family: "Montserrat", sans-serif;
   padding: 15px 30px;
-  width: 60vw;
+  width: 50vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -305,51 +305,22 @@ h1 {
 /* elementer placeres via grid */
 .section_wrapper {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(12, 1fr);
 }
 
 .col_1,
 .col_2 {
-  grid-column: 2/10;
+  grid-column: 2/12;
 }
 
-.col_img,
-.col2_img {
-  grid-column: 2/10;
+.col2_img,
+.col_img {
+  grid-column: 2/12;
 }
 
-/* MEDIAQUERIES */
-@media (min-width: 850px) {
-  #web_section1 h2,
-  #ux_section1 h2,
-  #animation_section1 h2,
-  #indhold_section1 h2,
-  #om_section1 h2 {
-    grid-column: 3/9;
-  }
-
-  /* styling af elementer i second_section */
-  .element_1,
-  .element_2,
-  .element_3,
-  .element_4 {
-    width: 50%;
-  }
-  /* elementer placeres via grid */
-  .col_1,
-  .col_2 {
-    grid-column: 3/9;
-  }
-
-  .col_img,
-  .col2_img {
-    grid-column: 3/9;
-  }
-
-  /* styling af knap */
-  .knap {
-    width: 50vw;
-  }
+.web_knap,
+.web_knap1 {
+  grid-column: 4/8;
 }
 
 /* MENU DESKTOP */
@@ -361,8 +332,7 @@ h1 {
     background: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 60px;
+    justify-content: space-around;
     transition: none;
     transform: none;
     padding: 0;
@@ -384,51 +354,3 @@ h1 {
     display: none;
   }
 }
-
-@media (min-width: 1100px) {
-  /* elementer placeres via grid */
-  /* .col_1,
-  .col2_img {
-    grid-column: 2/6;
-    grid-row: 1/2;
-  }
-
-  .col_img,
-  .col_2 {
-    grid-column: 6/10;
-  } */
-
-  .col_img,
-  .col2_img {
-    max-width: 650px;
-  }
-  .section_wrapper {
-    display: flex;
-    padding: 30px;
-  }
-
-  .web_knap {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .web_knap1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  /* styling af knap */
-  .knap {
-    width: 18vw;
-    margin-top: 2em;
-  }
-}
-
-/* @media (min-width: 1100px) {
-  .section_wrapper {
-    display: flex;
-    padding: 40px;
-  }
-} */

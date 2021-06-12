@@ -337,12 +337,14 @@ h1 {
     font-family: "Montserrat", sans-serif;
     color: #ffffff;
     font-weight: 700;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     display: block;
   }
 
-  #menu a:hover {
-    color: #a5678e;
+  #menu a.link4:hover,
+  #menu a.link5:hover,
+  #menu a.link6:hover {
+    color: rgba(51, 83, 158, 1);
   }
 
   /* styling af burger_btn */

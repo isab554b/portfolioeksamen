@@ -30,6 +30,10 @@ footer {
   background-color: #f4f4f4;
 }
 
+footer p {
+  max-width: none;
+}
+
 /* styling af logo  */
 .logo {
   font-family: "Limelight", cursive;

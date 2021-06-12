@@ -162,7 +162,7 @@ a {
   height: 100vh;
 
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(12, 1fr);
 }
 
@@ -181,11 +181,6 @@ h1 {
 
 .text2 {
   grid-column: 5/6;
-  grid-row: 6/7;
-}
-
-.text3 {
-  grid-column: 6/7;
   grid-row: 6/7;
 }
 
@@ -314,36 +309,41 @@ h1 {
 }
 
 .col_1,
-.col_3 {
+.col_2 {
   grid-column: 2/10;
 }
 
 .col_img,
-.col3_img {
+.col2_img {
   grid-column: 2/10;
 }
 
-.web_knap,
-.web_knap1 {
-  grid-column: 3/10;
-}
-
 /* MEDIAQUERIES */
-/* ÆNDRET GRID */
 @media (min-width: 850px) {
+  #web_section1 h2,
+  #ux_section1 h2,
+  #animation_section1 h2,
+  #indhold_section1 h2,
+  #om_section1 h2 {
+    grid-column: 3/9;
+  }
+
+  /* styling af elementer i second_section */
+  .element_1,
+  .element_2,
+  .element_3,
+  .element_4 {
+    width: 50%;
+  }
   /* elementer placeres via grid */
   .col_1,
-  .col_3 {
-    grid-column: 2/9;
+  .col_2 {
+    grid-column: 3/9;
   }
 
   .col_img,
-  .col3_img {
-    grid-column: 2/9;
-  }
-  .web_knap,
-  .web_knap1 {
-    grid-column: 3/8;
+  .col2_img {
+    grid-column: 3/9;
   }
 
   /* styling af knap */
@@ -361,15 +361,16 @@ h1 {
     background: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 60px;
     transition: none;
     transform: none;
-    padding: 10px;
+    padding: 0;
   }
 
   #menu a {
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   #menu a.link4:hover,
@@ -384,29 +385,50 @@ h1 {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   /* elementer placeres via grid */
-  .col_1,
-  .col3_img {
+  /* .col_1,
+  .col2_img {
     grid-column: 2/6;
     grid-row: 1/2;
   }
 
   .col_img,
-  .col_3 {
+  .col_2 {
     grid-column: 6/10;
+  } */
+
+  .col_img,
+  .col2_img {
+    max-width: 650px;
+  }
+  .section_wrapper {
+    display: flex;
+    padding: 30px;
   }
 
   .web_knap {
-    grid-column: 3/5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .web_knap1 {
-    grid-column: 7/9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   /* styling af knap */
   .knap {
-    width: 20vw;
+    width: 18vw;
+    margin-top: 2em;
   }
 }
+
+/* @media (min-width: 1100px) {
+  .section_wrapper {
+    display: flex;
+    padding: 40px;
+  }
+} */

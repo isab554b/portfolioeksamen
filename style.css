@@ -317,10 +317,10 @@ h1 {
 }
 
 /* MEDIAQUERIES */
+/* MENU DESKTOP */
 @media (min-width: 850px) {
   #menu {
     position: static;
-
     width: 100%;
     height: auto;
     background: none;
@@ -333,11 +333,8 @@ h1 {
   }
 
   #menu a {
-    font-family: "Montserrat", sans-serif;
     color: #ffffff;
-    font-weight: 700;
     font-size: 1.5rem;
-    display: block;
   }
 
   #menu a.link4:hover,

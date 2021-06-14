@@ -343,7 +343,7 @@ h1 {
   #om_section2 .col_img {
     grid-column: 4/11;
   }
-
+}
 
 /* placering af h2 i first_section på undersider */
 @media (max-width: 1000px) and (min-width: 850px) {
@@ -413,10 +413,11 @@ h1 {
   .web_knap1 {
     grid-column: 5/9;
   }
-.forside_wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 0 2em 0 2em;
-gap: 2em; 
-} }
+  .forside_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 2em 0 2em;
+    gap: 2em;
+  }
+}

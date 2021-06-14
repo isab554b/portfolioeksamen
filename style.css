@@ -53,7 +53,7 @@ footer p {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin-bottom: 1em;
+  margin-top: 2em;
 }
 
 .web_knap a:hover,
@@ -323,7 +323,15 @@ h1 {
   grid-column: 4/8;
 }
 /* MEDIAQUERIES */
-/* MENU DESKTOP */
+@media (min-width: 550px) {
+  #om_section2 .col_img img {
+    max-width: 400px;
+  }
+  #om_section2 .col_img {
+    grid-column: 3/11;
+  }
+}
+
 @media (min-width: 850px) {
   .col_1,
   .col_2 {
@@ -333,6 +341,10 @@ h1 {
   .col2_img,
   .col_img {
     grid-column: 3/11;
+  }
+
+  #om_section2 .col_img {
+    grid-column: 4/11;
   }
 }
 
@@ -388,6 +400,9 @@ h1 {
     align-items: center;
   }
 
+  #om_section2 .col_img {
+    grid-column: 8/12;
+  }
   .knap {
     width: 30vw;
   }

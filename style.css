@@ -33,13 +33,15 @@ footer p {
   max-width: none;
 }
 
-/* styling af logo  */
-/* .logo {
-  font-family: "Limelight", cursive;
-  color: #ffffff;
-  font-size: clamp(1.5rem, 2.7vw + 0.3rem, 2rem);
-  padding: 10px;
-} */
+/* styling af ikon  */
+.logo {
+  max-width: 50px;
+  margin-left: 0.8em;
+}
+
+.logo img {
+  filter: none;
+}
 /* styling af knapper */
 .knap {
   background: #ffffff;
@@ -248,11 +250,7 @@ h1 {
 #animation_section1,
 #indhold_section1,
 #om_section1 {
-  background: linear-gradient(
-    90deg,
-    rgba(51, 83, 158, 1) 0%,
-    rgba(165, 103, 142, 1) 80%
-  );
+  background-color: #f4f4f4;
   width: 100%;
 
   display: grid;
@@ -264,10 +262,11 @@ h1 {
 #animation_section1 h2,
 #indhold_section1 h2,
 #om_section1 h2 {
-  font-family: "Limelight", cursive;
-  color: #ffffff;
-  font-size: clamp(2rem, 1.1vw + 2rem, 3rem);
+  font-family: "Montserrat", cursive;
+  color: #000000;
+  font-size: clamp(1.5rem, 1.2vw + 1.5rem, 3rem);
   grid-column: 2/10;
+  margin-top: 1em;
 }
 
 /* SECOND/THIRD SECTION GENERELT PÅ ALLE UNDERSIDER */
@@ -316,6 +315,12 @@ h1 {
 .web_knap1 {
   grid-column: 4/8;
 }
+
+#indhold_section3 .col_2,
+#indhold_section3 .col2_img {
+  margin-top: 4em;
+}
+
 /* MEDIAQUERIES */
 /* styling og placering af img på "om mig" */
 @media (min-width: 550px) {
@@ -394,7 +399,7 @@ h1 {
 
   .col2_img,
   .col_img {
-    grid-column: 7/12;
+    grid-column: 8/12;
     display: grid;
     align-items: center;
   }

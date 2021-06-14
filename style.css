@@ -1,4 +1,4 @@
-/* generelt */
+/* generelt for hele sitet */
 * {
   margin: 0;
   padding: 0;
@@ -12,12 +12,11 @@ p {
 }
 
 /* generelt for img og video */
-img,
-video {
+img {
   display: block;
   width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  filter: drop-shadow(2px 4px 8px #000);
 }
 
 /* footer */
@@ -41,7 +40,7 @@ footer p {
   font-size: clamp(1.5rem, 2.7vw + 0.3rem, 2rem);
   padding: 10px;
 }
-/* styling af knap */
+/* styling af knapper */
 .knap {
   background: #ffffff;
   box-shadow: 0 3px 6px #d9d9d9;
@@ -72,6 +71,9 @@ header {
   position: sticky;
   top: 0;
   left: 0;
+
+  /* (for at undgå at img flyder over navbar) */
+  z-index: 1;
 }
 
 header nav {
@@ -191,8 +193,8 @@ h1 {
   grid-row: 4/8;
 }
 
-/* SECOND SECTION GENERELT */
-/* styling af elementer i second_section */
+/* SECOND SECTION FORSIDE*/
+/* styling af elementer i second_section på forside */
 .element_1,
 .element_2,
 .element_3,
@@ -205,52 +207,42 @@ h1 {
   padding-left: 20px;
 }
 
-/* styling af h2 i second_section */
+/* styling af h2 i second_section på forside*/
 #forside_section2 h2 {
   font-family: "Montserrat", sans-serif;
   color: #000000;
 }
 
-/* placering af h2 i second_section */
+/* placering af h2 i second_section på forside */
 #forside_section2 .text {
   padding: 2em;
 }
 
-/* styling af p i second_section */
+/* styling af p i second_section på forside */
 #forside_section2 a {
   font-family: "Montserrat", sans-serif;
   color: #000000;
 }
 
-/* hover-effekt til links */
+/* hover-effekt til links på forside */
 #forside_section2 a:hover {
   background-color: #ebeaea;
 }
 
-/* placering af elementer i second_section */
+/* placering af elementer i second_section på forside */
 .forside_wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-/* bagrundsfarve på alle undersider */
-#forside_section2,
-#web_section1,
-#ux_section1,
-#animation_section1,
-#indhold_section1,
-#om_section1,
-#web_section2,
-#ux_section2,
-#animation_section2,
-#indhold_section2,
-#indhold_section3,
-#om_section2 {
+/* bagrundsfarve på forside */
+#forside_section2 {
   background-color: #f4f4f4;
 }
 
 /* FIRST SECTON GENERELT PÅ ALLE UNDERSIDER */
+/* styling af first_section */
 #web_section1,
 #ux_section1,
 #animation_section1,
@@ -266,6 +258,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
+/* styling af h2 */
 #web_section1 h2,
 #ux_section1 h2,
 #animation_section1 h2,
@@ -278,7 +271,7 @@ h1 {
 }
 
 /* SECOND/THIRD SECTION GENERELT PÅ ALLE UNDERSIDER */
-/* styling af h3 og p */
+/* styling af h3 */
 #web_section2 h3,
 #ux_section2 h3,
 #animation_section2 h3,
@@ -290,7 +283,7 @@ h1 {
   margin-top: 2em;
   margin-bottom: 1em;
 }
-
+/* styling af p */
 #web_section2 p,
 #ux_section2 p,
 #animation_section2 p,
@@ -304,6 +297,7 @@ h1 {
 
 /* elementer placeres via grid */
 .section_wrapper {
+  background-color: #f4f4f4;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -323,6 +317,7 @@ h1 {
   grid-column: 4/8;
 }
 /* MEDIAQUERIES */
+/* styling og placering af img på "om mig" */
 @media (min-width: 550px) {
   #om_section2 .col_img img {
     max-width: 400px;
@@ -332,6 +327,7 @@ h1 {
   }
 }
 
+/* placering af elementer på undersider */
 @media (min-width: 850px) {
   .col_1,
   .col_2 {
@@ -343,11 +339,13 @@ h1 {
     grid-column: 3/11;
   }
 
+  /* placering af img på "om mig" */
   #om_section2 .col_img {
     grid-column: 4/11;
   }
-}
 
+
+/* placering af h2 i first_section på undersider */
 @media (max-width: 1000px) and (min-width: 850px) {
   #web_section1 h2,
   #ux_section1 h2,
@@ -358,6 +356,7 @@ h1 {
   }
 }
 
+/* fra burgermenu til menubar */
 @media (min-width: 1000px) {
   #menu {
     position: static;
@@ -383,11 +382,11 @@ h1 {
     color: rgba(51, 83, 158, 1);
   }
 
-  /* styling af burger_btn */
   #burger_btn {
     display: none;
   }
 
+  /* placering af elemener på undersider */
   .col_1,
   .col_2 {
     grid-column: 2/7;
@@ -399,16 +398,25 @@ h1 {
     display: grid;
     align-items: center;
   }
-
+  /* placering af img på "om mig" */
   #om_section2 .col_img {
     grid-column: 8/12;
   }
+
+  /* styling af knapper */
   .knap {
     width: 30vw;
   }
 
+  /* placering af knapper */
   .web_knap,
   .web_knap1 {
     grid-column: 5/9;
   }
-}
+.forside_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 2em 0 2em;
+gap: 2em; 
+} }

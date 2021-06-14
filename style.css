@@ -34,12 +34,12 @@ footer p {
 }
 
 /* styling af logo  */
-.logo {
+/* .logo {
   font-family: "Limelight", cursive;
   color: #ffffff;
   font-size: clamp(1.5rem, 2.7vw + 0.3rem, 2rem);
   padding: 10px;
-}
+} */
 /* styling af knapper */
 .knap {
   background: #ffffff;

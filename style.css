@@ -390,6 +390,17 @@ h1 {
     display: none;
   }
 
+  .text1 {
+    grid-column: 3/7;
+  }
+
+  .text2 {
+    grid-column: 6/7;
+  }
+
+  .boks {
+    grid-column: 2/8;
+  }
   /* placering af elemener på undersider */
   .col_1,
   .col_2 {

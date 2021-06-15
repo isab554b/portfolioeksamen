@@ -390,6 +390,7 @@ h1 {
     display: none;
   }
 
+  /* placering af h1 på forside */
   .text1 {
     grid-column: 3/7;
   }

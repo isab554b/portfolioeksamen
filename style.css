@@ -21,9 +21,8 @@ img {
 
 /* footer */
 footer {
-  height: 8em;
   text-align: center;
-  padding: 4em;
+  padding: 60px;
   font-family: "Montserrat", sans-serif;
   color: #000000;
   background-color: #f4f4f4;
@@ -36,7 +35,7 @@ footer p {
 /* styling af ikon  */
 .logo {
   max-width: 50px;
-  margin-left: 0.8em;
+  margin-left: 12px;
 }
 
 .logo img {
@@ -54,7 +53,7 @@ footer p {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin-top: 2em;
+  margin-top: 20px;
 }
 
 .web_knap a:hover,
@@ -266,7 +265,7 @@ h1 {
   color: #000000;
   font-size: clamp(1.5rem, 1.2vw + 1.5rem, 3rem);
   grid-column: 2/12;
-  margin-top: 1em;
+  margin-top: 1.5rem;
 }
 
 /* SECOND/THIRD SECTION GENERELT PÅ ALLE UNDERSIDER */
@@ -279,8 +278,8 @@ h1 {
 #om_section2 h3 {
   font-family: "Montserrat", sans-serif;
   color: #000000;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 /* styling af p */
 #web_section2 p,
@@ -318,7 +317,7 @@ h1 {
 
 #indhold_section3 .col_2,
 #indhold_section3 .col2_img {
-  margin-top: 4em;
+  margin-top: 64px;
 }
 
 /* MEDIAQUERIES */
@@ -422,7 +421,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 0 2em 0 2em;
-    gap: 2em;
+    margin: 0 32px 0 32px;
+    gap: 32px;
   }
 }

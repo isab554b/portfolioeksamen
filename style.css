@@ -265,7 +265,7 @@ h1 {
   font-family: "Montserrat", cursive;
   color: #000000;
   font-size: clamp(1.5rem, 1.2vw + 1.5rem, 3rem);
-  grid-column: 2/10;
+  grid-column: 2/12;
   margin-top: 1em;
 }
 
